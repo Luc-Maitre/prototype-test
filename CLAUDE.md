@@ -14,15 +14,13 @@ Tu es le partenaire technique de ce prototype. Tu travailles avec un designer qu
 
 ## Contexte du prototype
 
-> Cette section est remplie automatiquement lors de l'initialisation avec `/create-prototype`.
-
-- **Titre** : —
-- **Usage** : —
-- **Appareil cible** : —
-- **Langue** : —
-- **Hypothèse testée** : —
-- **Date de test prévue** : —
-- **Lien Figma** : —
+- **Titre** : Test cycle de vie prototype
+- **Usage** : usertest
+- **Appareil cible** : mobile
+- **Langue** : français
+- **Hypothèse testée** : blublublu
+- **Date de test prévue** : 2026-10-08
+- **Lien Figma** : https://www.figma.com/design/MZU7Bi4QpnNI18JL32YzR8/FT-Internal-PSP--TRX-?node-id=26923-114731&t=A68sPt0m3NVOt0WN-4
 - **Statut** : 🛠 Building
 
 ---

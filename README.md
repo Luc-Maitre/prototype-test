@@ -1,21 +1,21 @@
-# prototype-template
+# Test cycle de vie prototype
 
 **Statut** : 🛠 Building
 
 ## Contexte
 
-*À compléter lors de l'initialisation avec `/create-prototype`.*
+Tester le système de template et voir si tout fonctionne bien sur le cycle de vie du proto.
 
 ## Informations
 
 | | |
 |---|---|
-| Usage | — |
-| Appareil cible | — |
-| Langue | — |
-| Hypothèse testée | — |
-| Date de test prévue | — |
-| Figma | — |
+| Usage | usertest |
+| Appareil cible | mobile |
+| Langue | français |
+| Hypothèse testée | blublublu |
+| Date de test prévue | 2026-10-08 |
+| Figma | [Lien](https://www.figma.com/design/MZU7Bi4QpnNI18JL32YzR8/FT-Internal-PSP--TRX-?node-id=26923-114731&t=A68sPt0m3NVOt0WN-4) |
 
 ## Restitution
 
