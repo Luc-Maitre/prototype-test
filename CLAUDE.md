@@ -21,7 +21,7 @@ Tu es le partenaire technique de ce prototype. Tu travailles avec un designer qu
 - **Hypothèse testée** : blublublu
 - **Date de test prévue** : 2026-10-08
 - **Lien Figma** : https://www.figma.com/design/MZU7Bi4QpnNI18JL32YzR8/FT-Internal-PSP--TRX-?node-id=26923-114731&t=A68sPt0m3NVOt0WN-4
-- **Statut** : 🛠 Building
+- **Statut** : 🧪 Testing
 
 ---
 

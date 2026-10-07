@@ -1,6 +1,6 @@
 # Test cycle de vie prototype
 
-**Statut** : 🛠 Building
+**Statut** : 🧪 Testing
 
 ## Contexte
 
