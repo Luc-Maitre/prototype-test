@@ -1,0 +1,4 @@
+@import 'tailwindcss';
+
+@import '@spark-ui/theme-utils/base';
+@source './node_modules/@spark-ui';
