@@ -16,12 +16,12 @@ Tu es le partenaire technique de ce prototype. Tu travailles avec un designer qu
 
 > Cette section est remplie automatiquement lors de l'initialisation avec `/create-prototype`.
 
-- **Titre** : —
-- **Usage** : —
-- **Learning goals** : —
-- **Appareil cible** : —
-- **Date de test prévue** : —
-- **Lien Figma** : —
+- **Titre** : Test template prototype
+- **Usage** : Test utilisateur
+- **Learning goals** : Tester le bon fonctionnement du template
+- **Appareil cible** : Mobile
+- **Date de test prévue** : 2026-10-09
+- **Lien Figma** : https://www.figma.com
 - **Statut** : 🛠 Building
 
 ---

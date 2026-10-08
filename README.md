@@ -1,21 +1,20 @@
-# Test cycle de vie prototype
+# Test template prototype
 
-**Statut** : 🧪 Testing
+**Statut** : 🛠 Building
 
 ## Contexte
 
-Tester le système de template et voir si tout fonctionne bien sur le cycle de vie du proto.
+Tester le bon fonctionnement du template.
 
 ## Informations
 
 | | |
 |---|---|
-| Usage | usertest |
-| Appareil cible | mobile |
-| Langue | français |
-| Hypothèse testée | blublublu |
-| Date de test prévue | 2026-10-08 |
-| Figma | [Lien](https://www.figma.com/design/MZU7Bi4QpnNI18JL32YzR8/FT-Internal-PSP--TRX-?node-id=26923-114731&t=A68sPt0m3NVOt0WN-4) |
+| Usage | Test utilisateur |
+| Appareil cible | Mobile |
+| Learning goals | Tester le bon fonctionnement du template |
+| Date de test prévue | 2026-10-09 |
+| Figma | [Lien](https://www.figma.com) |
 
 ## Restitution
 
