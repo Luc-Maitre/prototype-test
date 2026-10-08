@@ -14,14 +14,15 @@ Tu es le partenaire technique de ce prototype. Tu travailles avec un designer qu
 
 ## Contexte du prototype
 
-- **Titre** : Test cycle de vie prototype
-- **Usage** : usertest
-- **Appareil cible** : mobile
-- **Langue** : français
-- **Hypothèse testée** : blublublu
-- **Date de test prévue** : 2026-10-08
-- **Lien Figma** : https://www.figma.com/design/MZU7Bi4QpnNI18JL32YzR8/FT-Internal-PSP--TRX-?node-id=26923-114731&t=A68sPt0m3NVOt0WN-4
-- **Statut** : 🧪 Testing
+> Cette section est remplie automatiquement lors de l'initialisation avec `/create-prototype`.
+
+- **Titre** : —
+- **Usage** : —
+- **Learning goals** : —
+- **Appareil cible** : —
+- **Date de test prévue** : —
+- **Lien Figma** : —
+- **Statut** : 🛠 Building
 
 ---
 
@@ -29,16 +30,18 @@ Tu es le partenaire technique de ce prototype. Tu travailles avec un designer qu
 
 ### `/create-prototype`
 
-Pose les questions suivantes au designer, **une par une**, en attendant la réponse avant de passer à la suivante :
+Pose les questions suivantes au designer, **une par une**, en attendant la réponse avant de passer à la suivante.
 
-1. Pour quel usage ? `usertest` / `idéation` / `démo` / `autre`
-2. Décris le contexte du prototype en une ou deux phrases.
-3. Quel titre ? (propose-en un à partir du contexte, le designer peut le modifier)
-4. Appareil cible ? `mobile` / `desktop` / `les deux`
-5. Langue du contenu ? `français` / `anglais` / `autre`
-6. As-tu un lien Figma ? (optionnel — appuie sur Entrée pour passer)
-7. *(Si usage = usertest)* Quelle est l'hypothèse testée ?
-8. *(Si usage = usertest)* Date de test prévue ?
+Pour les questions à choix finis, utilise l'outil **`AskUserQuestion`** afin d'afficher des options sélectionnables. Pour les questions ouvertes, attends une réponse en texte libre.
+
+1. **Usage** *(AskUserQuestion)* — options : `Test utilisateur` / `Idéation` / `Démo` / `Autre`
+2. **Learning goals** *(texte libre)* — "Quels sont les apprentissages visés par ce prototype ?"
+3. **Titre** *(AskUserQuestion)* — options : `Générer un titre à partir du contexte` / `Définir manuellement`
+   - Si "Générer" : propose un titre, le designer confirme ou corrige en texte libre
+   - Si "Définir manuellement" : demande le titre en texte libre
+4. **Appareil cible** *(AskUserQuestion)* — options : `Mobile` / `Desktop` / `Les deux`
+5. **Lien Figma** *(texte libre, optionnel)* — "As-tu un lien Figma ? (laisse vide pour passer)"
+6. *(Si usage = Test utilisateur)* **Date de test prévue** *(texte libre)* — "Quelle est la date de test prévue ?"
 
 Une fois les réponses collectées :
 
@@ -72,14 +75,21 @@ Une fois les réponses collectées :
    ```
    gh secret set PROTOTYPE_PASSWORD --body "LE_MOT_DE_PASSE"
    ```
-4. Mets le statut à `🧪 Testing` dans le README et dans la section Contexte de ce fichier.
-5. Fais un commit : `git commit -m "chore: passage en phase Testing"`
-6. Pousse sur main puis sur la branche testing :
+4. Active GitHub Pages et autorise la branche `testing` à déployer :
+   ```
+   REPO_FULL=$(gh repo view --json nameWithOwner -q .nameWithOwner)
+   gh api repos/$REPO_FULL/pages --method POST -f build_type=workflow 2>/dev/null || true
+   gh api repos/$REPO_FULL/environments/github-pages/deployment-branch-policies \
+     --method POST -f name=testing -f type=branch 2>/dev/null || true
+   ```
+5. Mets le statut à `🧪 Testing` dans le README et dans la section Contexte de ce fichier.
+6. Fais un commit : `git commit -m "chore: passage en phase Testing"`
+7. Pousse sur main puis sur la branche testing :
    ```
    git push origin main
    git push origin main:testing --force
    ```
-7. Confirme au designer :
+8. Confirme au designer :
    - L'URL du prototype (format : `https://NOM-ORG.github.io/NOM-REPO/`)
    - Le mot de passe à partager avec les participants
    - Un message prêt à copier-coller pour inviter les testeurs
@@ -111,6 +121,16 @@ Une fois les réponses collectées :
 - Utilise les tokens Tailwind de Spark pour les couleurs, espacements et typographie (pas de valeurs arbitraires).
 - Les composants du prototype vont dans `src/components/`.
 - Pas de CSS custom sauf si absolument nécessaire — documente pourquoi dans ce cas.
+
+### Spark — tokens à utiliser
+
+- Espacement sémantique : `gap-sm` (4px), `gap-md` (8px), `gap-lg` (16px),
+  `gap-xl` (24px), `gap-2xl` (32px). Idem pour `p-*`, `px-*`, `py-*`.
+- Tailles fixes : `size-sz-16/20/32/40/44`, `w-sz-*`, `h-sz-*`.
+- Ne jamais utiliser les classes numériques Tailwind (`size-5`, `gap-4`, `p-6`) —
+  Spark redéfinit `--spacing` et elles ne donnent pas les valeurs attendues.
+- Pour les dimensions `width`/`height` des balises `<img>` et SVG : toujours utiliser
+  des styles inline en pixels, pas des classes Tailwind.
 
 ---
 
